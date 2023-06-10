@@ -1,0 +1,7 @@
+python-okx
+pandas
+matplotlib
+scikit-learn
+scipy
+seaborn
+numpy

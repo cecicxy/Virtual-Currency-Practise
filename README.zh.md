@@ -1,4 +1,5 @@
 ## 虚拟货币价格预测
+[English](./README.md) | 简体中文
 ### 项目简介
 本项目是一个基于深度学习的虚拟货币价格预测项目，通过爬取公开数据信息，获得了关于比特币的市场，新闻，美国互联网巨头公司的股票及市值，在数据清洗（异常值剔除，缺失值填补）后，采用了多个预测模型对比特币价格进行预测，最终得到了较为准确的预测结果。
 ### 项目数据来源
@@ -11,12 +12,17 @@
 ### 项目结构
 项目分为数据获取以及模型预测两部分
 - 数据获取
+    位于[`datasets`](./datasets/dataGain.py)文件夹下
     - 数据爬取
     - 数据清洗
+    - 保存数据
+        - [ETH历史价格数据](./datasets/ETHUSDT_1H.csv)
+        - [BTC价格及市场数据](./datasets/demodata.csv)
 - 模型预测
-    - LSTM对纯历史价格进行预测
-    - 通过关联分析，提取数据集中的有效信息，再利用MLP 线性模型进行预测
-    - 采用卷积神经网络利用市场，新闻情绪等数据进行预测
+    位于`simplemodel`文件夹下
+    - LSTM对纯历史价格进行预测 [文件](./simplemodel/lstm.ipynb) [![colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cecicxy/Virtual-Currency-Practise/blob/main/simplemodel/lstm.ipynb)
+    - 通过关联分析，提取数据集中的有效信息，再利用MLP 线性模型进行预测[文件](./simplemodel/mlp.ipynb) [![colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cecicxy/Virtual-Currency-Practise/blob/main/simplemodel/mlp.ipynb)
+    - 采用卷积神经网络利用市场，新闻情绪等数据进行预测 [文件](./simplemodel/longtermprediction.ipynb) [![colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cecicxy/Virtual-Currency-Practise/blob/main/simplemodel/longtermprediction.ipynb)
 
 ### TODO
 - [x] 数据爬取

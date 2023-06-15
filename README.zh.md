@@ -4,7 +4,8 @@
 ### 项目数据来源
 - 比特币价格数据：[https://www.coindesk.com/price/bitcoin](https://www.coindesk.com/price/bitcoin)
 - 比特币新闻数据：[https://www.coindesk.com/news](https://www.coindesk.com/news)
-- 市场情绪数据：[https://www.coindesk.com/data](https://www.coindesk.com/data)
+- 市场情绪数据：[FearGreedIndex](https://api.alternative.me/fng/?limit=2000&date_format=us)
+
 - 美国互联网巨头公司的股票及市值：[https://finance.yahoo.com/quote/GOOG/history?p=GOOG](https://finance.yahoo.com/quote/GOOG/history?p=GOOG)
 - okx交易平台数据 ：[https://www.okex.com/](https://www.okex.com/)
 ### 项目结构

@@ -1,5 +1,5 @@
 # Virtual-Currency-Practise
-[中文](README_zh.md) | English
+[中文](README.zh.md) | English
 collect data from OKE, establish prediction model and make trade strategies
 1. git clone
 2. open this new folder

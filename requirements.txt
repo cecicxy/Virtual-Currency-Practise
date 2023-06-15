@@ -1,7 +1,9 @@
-python-okx
+torch
+torchvision
 pandas
 matplotlib
 scikit-learn
 scipy
 seaborn
 numpy
+pyod
